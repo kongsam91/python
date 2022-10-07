@@ -1,0 +1,14 @@
+## for phycr.py - library
+# this do not work on windows...QAQ
+pexpect
+# mysql connection
+pymysql
+netaddr
+wcwidth
+# colorful 😉
+colorama
+
+## for legoman.py - commandline interface
+click
+
+## for chronos.py - deamon

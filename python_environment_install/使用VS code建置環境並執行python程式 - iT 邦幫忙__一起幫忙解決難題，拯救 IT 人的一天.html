@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)https://ithelp.ithome.com.tw/articles/10212365 -->
+<html lang="zh-TW"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">.swal-icon--error{border-color:#f27474;-webkit-animation:animateErrorIcon .5s;animation:animateErrorIcon .5s}.swal-icon--error__x-mark{position:relative;display:block;-webkit-animation:animateXMark .5s;animation:animateXMark .5s}.swal-icon--error__line{position:absolute;height:5px;width:47px;background-color:#f27474;display:block;top:37px;border-radius:2px}.swal-icon--error__line--left{-webkit-transform:rotate(45deg);transform:rotate(45deg);left:17px}.swal-icon--error__line--right{-webkit-transform:rotate(-45deg);transform:rotate(-45deg);right:16px}@-webkit-keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@-webkit-keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}@keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}.swal-icon--warning{border-color:#f8bb86;-webkit-animation:pulseWarning .75s infinite alternate;animation:pulseWarning .75s infinite alternate}.swal-icon--warning__body{width:5px;height:47px;top:10px;border-radius:2px;margin-left:-2px}.swal-icon--warning__body,.swal-icon--warning__dot{position:absolute;left:50%;background-color:#f8bb86}.swal-icon--warning__dot{width:7px;height:7px;border-radius:50%;margin-left:-4px;bottom:-11px}@-webkit-keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}@keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}.swal-icon--success{border-color:#a5dc86}.swal-icon--success:after,.swal-icon--success:before{content:"";border-radius:50%;position:absolute;width:60px;height:120px;background:#fff;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal-icon--success:before{border-radius:120px 0 0 120px;top:-7px;left:-33px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:60px 60px;transform-origin:60px 60px}.swal-icon--success:after{border-radius:0 120px 120px 0;top:-11px;left:30px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:0 60px;transform-origin:0 60px;-webkit-animation:rotatePlaceholder 4.25s ease-in;animation:rotatePlaceholder 4.25s ease-in}.swal-icon--success__ring{width:80px;height:80px;border:4px solid hsla(98,55%,69%,.2);border-radius:50%;box-sizing:content-box;position:absolute;left:-4px;top:-4px;z-index:2}.swal-icon--success__hide-corners{width:5px;height:90px;background-color:#fff;position:absolute;left:28px;top:8px;z-index:1;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal-icon--success__line{height:5px;background-color:#a5dc86;display:block;border-radius:2px;position:absolute;z-index:2}.swal-icon--success__line--tip{width:25px;left:14px;top:46px;-webkit-transform:rotate(45deg);transform:rotate(45deg);-webkit-animation:animateSuccessTip .75s;animation:animateSuccessTip .75s}.swal-icon--success__line--long{width:47px;right:8px;top:38px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-animation:animateSuccessLong .75s;animation:animateSuccessLong .75s}@-webkit-keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@-webkit-keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@-webkit-keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}@keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}.swal-icon--info{border-color:#c9dae1}.swal-icon--info:before{width:5px;height:29px;bottom:17px;border-radius:2px;margin-left:-2px}.swal-icon--info:after,.swal-icon--info:before{content:"";position:absolute;left:50%;background-color:#c9dae1}.swal-icon--info:after{width:7px;height:7px;border-radius:50%;margin-left:-3px;top:19px}.swal-icon{width:80px;height:80px;border-width:4px;border-style:solid;border-radius:50%;padding:0;position:relative;box-sizing:content-box;margin:20px auto}.swal-icon:first-child{margin-top:32px}.swal-icon--custom{width:auto;height:auto;max-width:100%;border:none;border-radius:0}.swal-icon img{max-width:100%;max-height:100%}.swal-title{color:rgba(0,0,0,.65);font-weight:600;text-transform:none;position:relative;display:block;padding:13px 16px;font-size:27px;line-height:normal;text-align:center;margin-bottom:0}.swal-title:first-child{margin-top:26px}.swal-title:not(:first-child){padding-bottom:0}.swal-title:not(:last-child){margin-bottom:13px}.swal-text{font-size:16px;position:relative;float:none;line-height:normal;vertical-align:top;text-align:left;display:inline-block;margin:0;padding:0 10px;font-weight:400;color:rgba(0,0,0,.64);max-width:calc(100% - 20px);overflow-wrap:break-word;box-sizing:border-box}.swal-text:first-child{margin-top:45px}.swal-text:last-child{margin-bottom:45px}.swal-footer{text-align:right;padding-top:13px;margin-top:13px;padding:13px 16px;border-radius:inherit;border-top-left-radius:0;border-top-right-radius:0}.swal-button-container{margin:5px;display:inline-block;position:relative}.swal-button{background-color:#7cd1f9;color:#fff;border:none;box-shadow:none;border-radius:5px;font-weight:600;font-size:14px;padding:10px 24px;margin:0;cursor:pointer}.swal-button[not:disabled]:hover{background-color:#78cbf2}.swal-button:active{background-color:#70bce0}.swal-button:focus{outline:none;box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(43,114,165,.29)}.swal-button[disabled]{opacity:.5;cursor:default}.swal-button::-moz-focus-inner{border:0}.swal-button--cancel{color:#555;background-color:#efefef}.swal-button--cancel[not:disabled]:hover{background-color:#e8e8e8}.swal-button--cancel:active{background-color:#d7d7d7}.swal-button--cancel:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(116,136,150,.29)}.swal-button--danger{background-color:#e64942}.swal-button--danger[not:disabled]:hover{background-color:#df4740}.swal-button--danger:active{background-color:#cf423b}.swal-button--danger:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(165,43,43,.29)}.swal-content{padding:0 20px;margin-top:20px;font-size:medium}.swal-content:last-child{margin-bottom:20px}.swal-content__input,.swal-content__textarea{-webkit-appearance:none;background-color:#fff;border:none;font-size:14px;display:block;box-sizing:border-box;width:100%;border:1px solid rgba(0,0,0,.14);padding:10px 13px;border-radius:2px;-webkit-transition:border-color .2s;transition:border-color .2s}.swal-content__input:focus,.swal-content__textarea:focus{outline:none;border-color:#6db8ff}.swal-content__textarea{resize:vertical}.swal-button--loading{color:transparent}.swal-button--loading~.swal-button__loader{opacity:1}.swal-button__loader{position:absolute;height:auto;width:43px;z-index:2;left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%);text-align:center;pointer-events:none;opacity:0}.swal-button__loader div{display:inline-block;float:none;vertical-align:baseline;width:9px;height:9px;padding:0;border:none;margin:2px;opacity:.4;border-radius:7px;background-color:hsla(0,0%,100%,.9);-webkit-transition:background .2s;transition:background .2s;-webkit-animation:swal-loading-anim 1s infinite;animation:swal-loading-anim 1s infinite}.swal-button__loader div:nth-child(3n+2){-webkit-animation-delay:.15s;animation-delay:.15s}.swal-button__loader div:nth-child(3n+3){-webkit-animation-delay:.3s;animation-delay:.3s}@-webkit-keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}@keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}.swal-overlay{position:fixed;top:0;bottom:0;left:0;right:0;text-align:center;font-size:0;overflow-y:scroll;background-color:rgba(0,0,0,.4);z-index:10000;pointer-events:none;opacity:0;-webkit-transition:opacity .3s;transition:opacity .3s}.swal-overlay:before{content:" ";display:inline-block;vertical-align:middle;height:100%}.swal-overlay--show-modal{opacity:1;pointer-events:auto}.swal-overlay--show-modal .swal-modal{opacity:1;pointer-events:auto;box-sizing:border-box;-webkit-animation:showSweetAlert .3s;animation:showSweetAlert .3s;will-change:transform}.swal-modal{width:478px;opacity:0;pointer-events:none;background-color:#fff;text-align:center;border-radius:5px;position:static;margin:20px auto;display:inline-block;vertical-align:middle;-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;z-index:10001;-webkit-transition:opacity .2s,-webkit-transform .3s;transition:opacity .2s,-webkit-transform .3s;transition:transform .3s,opacity .2s;transition:transform .3s,opacity .2s,-webkit-transform .3s}@media (max-width:500px){.swal-modal{width:calc(100% - 20px)}}@-webkit-keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}@keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}</style>
+    
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title>使用VS code建置環境並執行python程式 - iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天</title>
+
+<meta name="description" content="下載並安裝python 首先到python官方網站 https://www.python.org/ 因為我用的是Win10，所以選Windows的 下載完成後執行剛才的程式 Add Python 3....">
+<meta name="keywords" content="iT邦幫忙,iThome">
+<meta name="author" content="iThome">
+<meta property="og:site_name" content="iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天">
+<meta property="og:url" content="https://ithelp.ithome.com.tw/articles/10212365">
+<meta property="og:type" content="website">
+<meta property="og:title" content="使用VS code建置環境並執行python程式 - iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天">
+<meta property="og:image" content="https://ithelp.ithome.com.tw/upload/images/20190802/201188899q3ymAXKK8.png">
+<meta property="og:description" content="下載並安裝python 首先到python官方網站 https://www.python.org/ 因為我用的是Win10，所以選Windows的 下載完成後執行剛才的程式 Add Python 3....">
+<meta property="fb:app_id" content="137875859607921">
+
+<link rel="apple-touch-icon" sizes="57x57" href="https://ithelp.ithome.com.tw/storage/favicons/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://ithelp.ithome.com.tw/storage/favicons/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://ithelp.ithome.com.tw/storage/favicons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://ithelp.ithome.com.tw/storage/favicons/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://ithelp.ithome.com.tw/storage/favicons/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://ithelp.ithome.com.tw/storage/favicons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://ithelp.ithome.com.tw/storage/favicons/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://ithelp.ithome.com.tw/storage/favicons/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://ithelp.ithome.com.tw/storage/favicons/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="https://ithelp.ithome.com.tw/storage/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://ithelp.ithome.com.tw/storage/favicons/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="https://ithelp.ithome.com.tw/storage/favicons/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="https://ithelp.ithome.com.tw/storage/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://ithelp.ithome.com.tw/storage/favicons/manifest.json">
+<link rel="mask-icon" href="https://ithelp.ithome.com.tw/storage/favicons/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="https://ithelp.ithome.com.tw/storage/favicons/mstile-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+<link rel="stylesheet" href="./使用VS code建置環境並執行python程式 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/bootstrap.min.css">
+<link rel="stylesheet" href="./使用VS code建置環境並執行python程式 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/jquery-ui.css">
+<link rel="stylesheet" href="./使用VS code建置環境並執行python程式 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/font-awesome.min.css">
+<link rel="stylesheet" href="./使用VS code建置環境並執行python程式 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/css">
+<link rel="stylesheet" href="./使用VS code建置環境並執行python程式 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/simplemde.min.css">
+<link rel="stylesheet" href="./使用VS code建置環境並執行python程式 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/sweetalert.css">
+<link rel="stylesheet" href="./使用VS code建置環境並執行python程式 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/select2.min.css">
+<link rel="stylesheet" href="./使用VS code建置環境並執行python程式 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/google.css">
+<link rel="stylesheet" href="./使用VS code建置環境並執行python程式 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/style.css">
+<!-- highlight -->
+<link rel="stylesheet" href="./使用VS code建置環境並執行python程式 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/railscasts.css">
+<!-- end -->
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+<!--messenger css-->
+    <style type="text/css" data-fbcssmodules="css:fb.css.base css:fb.css.dialog css:fb.css.iframewidget css:fb.css.customer_chat_plugin_iframe">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:15px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:19px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#043b87;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:13px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:13px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:17px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}
+.fb_mpn_mobile_landing_page_slide_out{animation-duration:200ms;animation-name:fb_mpn_landing_page_slide_out;transition-timing-function:ease-in}.fb_mpn_mobile_landing_page_slide_out_from_left{animation-duration:200ms;animation-name:fb_mpn_landing_page_slide_out_from_left;transition-timing-function:ease-in}.fb_mpn_mobile_landing_page_slide_up{animation-duration:500ms;animation-name:fb_mpn_landing_page_slide_up;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_in{animation-duration:300ms;animation-name:fb_mpn_bounce_in;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_out{animation-duration:300ms;animation-name:fb_mpn_bounce_out;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_out_v2{animation-duration:300ms;animation-name:fb_mpn_fade_out;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_v2{animation-duration:300ms;animation-name:fb_bounce_in_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_from_left{animation-duration:300ms;animation-name:fb_bounce_in_from_left;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_v2{animation-duration:300ms;animation-name:fb_bounce_out_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_from_left{animation-duration:300ms;animation-name:fb_bounce_out_from_left;transition-timing-function:ease-in}.fb_customer_chat_bubble_animated_no_badge{box-shadow:0 3px 12px rgba(0, 0, 0, .15);transition:box-shadow 150ms linear}.fb_customer_chat_bubble_animated_no_badge:hover{box-shadow:0 5px 24px rgba(0, 0, 0, .3)}.fb_customer_chat_bubble_animated_with_badge{box-shadow:-5px 4px 14px rgba(0, 0, 0, .15);transition:box-shadow 150ms linear}.fb_customer_chat_bubble_animated_with_badge:hover{box-shadow:-5px 8px 24px rgba(0, 0, 0, .2)}.fb_invisible_flow{display:inherit;height:0;overflow-x:hidden;width:0}.fb_new_ui_mobile_overlay_active{overflow:hidden}@keyframes fb_mpn_landing_page_slide_in{0%{border-radius:50%;margin:0 24px;width:60px}40%{border-radius:18px}100%{margin:0 12px;width:100% - 24px}}@keyframes fb_mpn_landing_page_slide_in_from_left{0%{border-radius:50%;left:12px;margin:0 24px;width:60px}40%{border-radius:18px}100%{left:12px;margin:0 12px;width:100% - 24px}}@keyframes fb_mpn_landing_page_slide_out{0%{margin:0 12px;width:100% - 24px}60%{border-radius:18px}100%{border-radius:50%;margin:0 24px;width:60px}}@keyframes fb_mpn_landing_page_slide_out_from_left{0%{left:12px;width:100% - 24px}60%{border-radius:18px}100%{border-radius:50%;left:12px;width:60px}}@keyframes fb_mpn_landing_page_slide_up{0%{bottom:0;opacity:0}100%{bottom:24px;opacity:1}}@keyframes fb_mpn_bounce_in{0%{opacity:.5;top:100%}100%{opacity:1;top:0}}@keyframes fb_mpn_fade_out{0%{bottom:30px;opacity:1}100%{bottom:0;opacity:0}}@keyframes fb_mpn_bounce_out{0%{opacity:1;top:0}100%{opacity:.5;top:100%}}@keyframes fb_bounce_in_v2{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}50%{transform:scale(1.03, 1.03);transform-origin:bottom right}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}}@keyframes fb_bounce_in_from_left{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom left}50%{transform:scale(1.03, 1.03);transform-origin:bottom left}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom left}}@keyframes fb_bounce_out_v2{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}}@keyframes fb_bounce_out_from_left{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom left}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom left}}@keyframes fb_bounce_out_v2_mobile_chat_started{0%{opacity:1;top:0}100%{opacity:0;top:20px}}@keyframes fb_customer_chat_bubble_bounce_in_animation{0%{bottom:6pt;opacity:0;transform:scale(0, 0);transform-origin:center}70%{bottom:18pt;opacity:1;transform:scale(1.2, 1.2)}100%{transform:scale(1, 1)}}@keyframes slideInFromBottom{0%{opacity:.1;transform:translateY(100%)}100%{opacity:1;transform:translateY(0)}}@keyframes slideInFromBottomDelay{0%{opacity:0;transform:translateY(100%)}97%{opacity:0;transform:translateY(100%)}100%{opacity:1;transform:translateY(0)}}</style></head>
+
+<body class="" style="">
+    <div class="header">
+    <div class="header__inner clearfix">
+        <h1 class="header__logo pull-left"><a href="https://ithelp.ithome.com.tw/"><img src="./使用VS code建置環境並執行python程式 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/logo.svg" alt="iT邦幫忙" class="img-responsive"></a></h1>
+        <div class="header__promote">
+            <div class="a12word pull-right">
+                <div class="a12word__box">
+                    <script type="text/javascript" async="" src="./使用VS code建置環境並執行python程式 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/ga.js.下載"></script><script src="./使用VS code建置環境並執行python程式 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/sdk.js.下載" async="" crossorigin="anonymous"></script><script id="facebook-jssdk" src="./使用VS code建置環境並執行python程式 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/sdk.js(1).下載"></script><script type="text/javascript" src="./使用VS code建置環境並執行python程式 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/serve"> </script>
+                </div>
+                <div class="a12word__box">
+                    <script type="text/javascript" src="./使用VS code建置環境並執行python程式 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/serve(1)"> </script>
+                </div>
+                <div class="a12word__box">
+                    <script type="text/javascript" src="./使用VS code建置環境並執行python程式 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/serve(2)"> </script>
+                </div>
+            </div>
+
+            <div class="a970 pull-right">
+                <script src="./使用VS code建置環境並執行python程式 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/serve(3)"></script>
+            </div>
+        </div>
+    </div>
+
+    <nav class="menu menu--fixed affix">
+        <div class="menu__bg">
+            <div class="menu__container clearfix">
+                
+                <h1 class="menu__logo">
+                    <a href="https://ithelp.ithome.com.tw/" class="menu__logo-link"><img src="./使用VS code建置環境並執行python程式 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/nav_logo.svg" alt="iT邦幫忙"></a>
+                </h1>
+
+                                                                                                                
+                
+                <ul class="list-unstyled menu__left">
+                    <li class="menu__item">
+                        <a href="https://ithelp.ithome.com.tw/questions" class="menu__item-link  menu__item-link--pl">技術問答</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="https://ithelp.ithome.com.tw/articles?tab=tech" class="menu__item-link  menu__item-link--active ">技術文章</a>
+                    </li>
+                    
+                    <li class="menu__item">
+                        <a href="https://ithelp.ithome.com.tw/articles?tab=job" class="menu__item-link  hidden-xs">iT 徵才</a>
+                    </li>
+                    
+                    <li class="menu__item">
+                        <a href="https://ithelp.ithome.com.tw/tags" class="menu__item-link  hidden-xs">Tag</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="https://ithelp.ithome.com.tw/talks" class="menu__item-link  hidden-xs">聊天室</a>
+                    </li>
+                    <li class="menu__item menu__item--ironman">
+                        <a href="https://ithelp.ithome.com.tw/2021ironman?utm_source=ithelp&amp;utm_medium=navbar&amp;utm_campaign=ironman13&amp;utm_content=trailer" target="_blank" class="menu__item-link hidden-xs">鐵人賽</a>
+                    </li>
+                </ul>
+                
+
+                                    
+                    <ul class="list-unstyled menu__right">
+                        <li class="menu__item">
+                            <div id="searchDropdown" class="menu__search-btn">
+                                <span class="menu__search-toggle"></span>
+                            </div>
+                        </li>
+                        <li class="menu__item">
+                            <a href="https://ithelp.ithome.com.tw/users/login" class="menu__item-link">登入/註冊</a>
+                        </li>
+                    </ul>
+                            </div>
+        </div>
+
+        
+        <div class="menu__dropform">
+            <div class="menu__container">
+                <form method="GET" action="https://ithelp.ithome.com.tw/search" accept-charset="UTF-8" role="search" class="clearfix">
+                    <div class="pull-left">
+                        <input name="search" type="text" class="menu__search-input" placeholder="搜尋主題、問題或人">
+
+                        <input type="radio" class="radio-input" name="tab" value="question" id="searchQA" checked="">
+                        <label for="searchQA" class="radio-label">問答</label>
+
+                        <input type="radio" class="radio-input" name="tab" value="article" id="searchArticle">
+                        <label for="searchArticle" class="radio-label">文章</label>
+
+                        <input type="radio" class="radio-input" name="tab" value="tag" id="searchTag">
+                        <label for="searchTag" class="radio-label">Tag</label>
+
+                        <input type="radio" class="radio-input" name="tab" value="user" id="searchID">
+                        <label for="searchID" class="radio-label">邦友</label>
+
+                        <input type="radio" class="radio-input" name="tab" value="ironman" id="searchIronman">
+                        <label for="searchIronman" class="radio-label">鐵人賽</label>
+                    </div>
+                    <button type="submit" class="btn menu__dropform-btn">搜尋</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="menu__mask"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    	<div class="container index-top">
+	    <div class="row">
+	        <div class="col-md-12 clearfix">
+    			    
+    <div class="leftside">
+                                                
+        <div class="qa-panel clearfix">
+            <div class="qa-panel__side">
+                
+                    <div class="qa-side">
+                        <div class="likeGroup">
+        <div class="likeGroup__arrow like_btn" data-type="article" data-id="10212365">
+                <i class="fa fa-caret-up"></i>
+        </div>
+        <div class="likeGroup__num">0</div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <div class="collection qa-collection" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="加入收藏清單">
+        <a href="https://ithelp.ithome.com.tw/users/login" class="btn collection__btn collection_btn">
+            <i class="fa fa-star-o"></i>
+        </a>
+    </div>
+                    </div>
+                
+            </div>
+            <div class="qa-panel__content">
+                <div class="qa-header">
+                                        
+                    <h2 class="qa-header__title">
+                                                    使用VS code建置環境並執行python程式
+                    </h2>
+                    <div class="qa-header__tagGroup">
+                                                    <a href="https://ithelp.ithome.com.tw/tags/articles/python%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0" class="tag qa-header__tagList">python系列文章</a>
+                                            </div>
+                    <div class="qa-header__info">
+                                                <a href="https://ithelp.ithome.com.tw/users/20118889/profile" class="qa-header__info-person">
+
+                            <img src="./使用VS code建置環境並執行python程式 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/139621" class="img-circle qa-header__info-avatar">
+
+許永平
+                        </a>
+                                                <a title="2019-07-11 19:53:26" class="qa-header__info-time">2019-07-11 19:53:26</a> ‧ <span class="qa-header__info-view">30881 瀏覽</span>
+                </div>
+                <!-- fb 按讚 按鈕 start -->
+                <div class="text-right">
+                    <div id="fb-root" style="display:flex;justify-content:flex-end" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.6";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+	<div class="fb-like fb_iframe_widget" data-href="https://ithelp.ithome.com.tw/articles/10212365" data-width="36px" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=&amp;container_width=694&amp;href=https%3A%2F%2Fithelp.ithome.com.tw%2Farticles%2F10212365&amp;layout=button_count&amp;locale=zh_TW&amp;sdk=joey&amp;share=false&amp;show_faces=false&amp;width=36px"><span style="vertical-align: bottom; width: 90px; height: 28px;"><iframe name="f3eee4df6361f08" height="1000px" data-testid="fb:like Facebook Social Plugin" title="fb:like Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="./使用VS code建置環境並執行python程式 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/like.html" style="border: none; visibility: visible; width: 90px; height: 28px;" class=""></iframe></span></div>
+                </div>
+                 <!-- fb 按讚 按鈕 end -->
+                    </div>
+                
+                <div class="qa-markdown">
+                    <div class="markdown">
+                        <div class="markdown__style">
+                                                            <h3>下載並安裝python</h3>
+<p>首先到python官方網站<br>
+<a href="https://www.python.org/" target="_blank">https://www.python.org/</a><br>
+因為我用的是Win10，所以選Windows的<br>
+<img src="./使用VS code建置環境並執行python程式 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/201188899q3ymAXKK8.png" alt="https://ithelp.ithome.com.tw/upload/images/20190802/201188899q3ymAXKK8.png"><br>
+下載完成後執行剛才的程式<br>
+<img src="./使用VS code建置環境並執行python程式 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/20118889wRZVKZQEsh.png" alt="https://ithelp.ithome.com.tw/upload/images/20190802/20118889wRZVKZQEsh.png"><br>
+Add Python 3.7 to PATH勾起來，這樣python就會自動加到環境變數<br>
+接著就一直下一步，裝好後就可以關閉<br>
+開啟命令提示字元，輸入python，按Enter，如果有出現<br>
+<img src="./使用VS code建置環境並執行python程式 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/20118889ah8hqRFHzM.png" alt="https://ithelp.ithome.com.tw/upload/images/20190802/20118889ah8hqRFHzM.png"><br>
+代表安裝成功<br>
+如果出現<br>
+<img src="./使用VS code建置環境並執行python程式 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/20118889izLuAI3RyE.png" alt="https://ithelp.ithome.com.tw/upload/images/20190802/20118889izLuAI3RyE.png"><br>
+代表環境變數沒有設定好</p>
+<h3>設定環境變數</h3>
+<p>電腦(右鍵)-&gt;內容-&gt;進階系統設定-&gt;環境變數-&gt;選取系統變數Path-&gt;編輯-&gt;加入指令路徑-&gt;確認設定<br>
+<img src="./使用VS code建置環境並執行python程式 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/201188893lzYrukESv.png" alt="https://ithelp.ithome.com.tw/upload/images/20190802/201188893lzYrukESv.png"><br>
+確認這兩個有被加進來<br>
+C:\Users\user\AppData\Local\Programs\Python\Python37-32\Scripts<br>
+C:\Users\user\AppData\Local\Programs\Python\Python37-32<br>
+注意，設定更改後，需重新開啟命令提示字元，變更才會生效喔!</p>
+<h3>建置VS code環境</h3>
+<p>開啟VS code-&gt;檔案-&gt;開啟資料夾-&gt;右鍵新建一個資料夾<br>
+<img src="./使用VS code建置環境並執行python程式 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/201188898VpWOdhhmw.png" alt="https://ithelp.ithome.com.tw/upload/images/20190711/201188898VpWOdhhmw.png"><br>
+建好後按選擇資料夾<br>
+<img src="./使用VS code建置環境並執行python程式 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/20118889iZc5fzdOcG.png" alt="https://ithelp.ithome.com.tw/upload/images/20190711/20118889iZc5fzdOcG.png"><br>
+新增資料夾.VScode<br>
+<img src="./使用VS code建置環境並執行python程式 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/20118889SOotiwxaRm.png" alt="https://ithelp.ithome.com.tw/upload/images/20190711/20118889SOotiwxaRm.png"><br>
+<img src="./使用VS code建置環境並執行python程式 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/20118889uTjyP9J70g.png" alt="https://ithelp.ithome.com.tw/upload/images/20190711/20118889uTjyP9J70g.png"><br>
+在.vscode資料夾裡新增檔案settings.json<br>
+<img src="./使用VS code建置環境並執行python程式 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/201188893e0emQcLzs.png" alt="https://ithelp.ithome.com.tw/upload/images/20190711/201188893e0emQcLzs.png"><br>
+<img src="./使用VS code建置環境並執行python程式 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/201188892YEjOIyhDZ.png" alt="https://ithelp.ithome.com.tw/upload/images/20190711/201188892YEjOIyhDZ.png"><br>
+輸入以下程式碼，你的python路徑可能跟我的不太一樣</p>
+<pre><code class="hljs json">{
+    <span class="hljs-attr">"python.pythonPath"</span>: <span class="hljs-string">"C:\\Users\\user\\AppData\\Local\\Programs\\Python\\Python37-32\\python.exe"</span>,
+    <span class="hljs-attr">"python.linting.enabled"</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"python.linting.pylintEnabled"</span>: <span class="hljs-literal">true</span>,
+}
+</code></pre>
+<p><img src="./使用VS code建置環境並執行python程式 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/20118889Nd8l9FMt1h.png" alt="https://ithelp.ithome.com.tw/upload/images/20190711/20118889Nd8l9FMt1h.png"><br>
+按左下角那裡也可以看到目前設置的python路徑<br>
+<img src="./使用VS code建置環境並執行python程式 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/20118889pvVoRIi9xq.png" alt="https://ithelp.ithome.com.tw/upload/images/20190711/20118889pvVoRIi9xq.png"><br>
+安裝Python這個延伸模組<br>
+<img src="./使用VS code建置環境並執行python程式 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/20118889dvIxB1Hucl.png" alt="https://ithelp.ithome.com.tw/upload/images/20190711/20118889dvIxB1Hucl.png"><br>
+在資料夾裡新增檔案test.py<br>
+<img src="./使用VS code建置環境並執行python程式 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/20118889kcvFJVxDW4.png" alt="https://ithelp.ithome.com.tw/upload/images/20190711/20118889kcvFJVxDW4.png"><br>
+可以開始輸入程式碼，按左下角開啟終端機<br>
+<img src="./使用VS code建置環境並執行python程式 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/20118889XH0VaPWSXr.png" alt="https://ithelp.ithome.com.tw/upload/images/20190711/20118889XH0VaPWSXr.png"><br>
+在終端機中輸入指令</p>
+<pre><code class="hljs vim"><span class="hljs-keyword">python</span> test.<span class="hljs-keyword">py</span>
+</code></pre>
+<p>執行python程式<br>
+<img src="./使用VS code建置環境並執行python程式 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/20118889xc3TdH2ZJc.png" alt="https://ithelp.ithome.com.tw/upload/images/20190711/20118889xc3TdH2ZJc.png"><br>
+接著安裝除錯程式，在終端機中輸入指令</p>
+<pre><code class="hljs sql">pip <span class="hljs-keyword">install</span> pylint
+</code></pre>
+<p><img src="./使用VS code建置環境並執行python程式 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/201188899URVunRGMp.png" alt="https://ithelp.ithome.com.tw/upload/images/20190711/201188899URVunRGMp.png"><br>
+裝好後它就能夠幫你的python程式除錯，把print改成printf後也出現了錯誤訊息<br>
+<img src="./使用VS code建置環境並執行python程式 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/20118889TBBC0ntAQP.png" alt="https://ithelp.ithome.com.tw/upload/images/20190711/20118889TBBC0ntAQP.png"><br>
+這就是為什麼在settings.json中要加入</p>
+<pre><code class="hljs cs"><span class="hljs-string">"python.linting.enabled"</span>: <span class="hljs-literal">true</span>,
+<span class="hljs-string">"python.linting.pylintEnabled"</span>: <span class="hljs-literal">true</span>,
+</code></pre>
+<p>因為這樣才能開啟除錯功能<br>
+如果你沒裝的話它可能就會出現這樣的錯誤訊息<br>
+<img src="./使用VS code建置環境並執行python程式 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/20118889OjXiMlYi2n.png" alt="https://ithelp.ithome.com.tw/upload/images/20190729/20118889OjXiMlYi2n.png"><br>
+最後安裝code runner這個延伸模組<br>
+<img src="./使用VS code建置環境並執行python程式 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/20118889rCg5leRTRV.png" alt="https://ithelp.ithome.com.tw/upload/images/20190713/20118889rCg5leRTRV.png"><br>
+裝好後就可以按右鍵-&gt;run code直接執行程式<br>
+也可以按右上角的三角形按鈕來執行程式喔~<br>
+<img src="./使用VS code建置環境並執行python程式 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/201188893hkGU5MaGh.png" alt="https://ithelp.ithome.com.tw/upload/images/20190711/201188893hkGU5MaGh.png"><br>
+如果要更改字型或字體大小，檔案-&gt;喜好設定-&gt;設定 就可以進到設定頁面<br>
+<img src="./使用VS code建置環境並執行python程式 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/20118889CGi31Skinl.png" alt="https://ithelp.ithome.com.tw/upload/images/20190711/20118889CGi31Skinl.png"><br>
+注意一下設定區的"使用者"這部分是VS code的全域設定<br>
+也就是會套用到所有的地方，不管從哪邊開啟檔案跟資料夾<br>
+如果只想改目前的資料夾的個人化設定<br>
+請改"工作區"這部分的，改完後就會發現.vscode目錄會多了json檔或是json檔被修改，那代表改好了<br>
+如果要把英文介面改為中文<br>
+按快捷鍵Ctrl+Shift+P<br>
+搜尋"語言"<br>
+<img src="./使用VS code建置環境並執行python程式 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/20118889wEIqVT7rC6.png" alt="https://ithelp.ithome.com.tw/upload/images/20190713/20118889wEIqVT7rC6.png"><br>
+選擇設定顯示語言-&gt;按Enter-&gt;選擇zh-tw<br>
+介面就會變為中文了<br>
+為了要讓VS code能夠幫我們的python程式碼自動排版及格式化<br>
+在終端機中輸入指令</p>
+<pre><code class="hljs sql">pip <span class="hljs-keyword">install</span> autopep8
+</code></pre>
+<p>在settings.json中設定</p>
+<pre><code class="language-json hljs">{
+    <span class="hljs-attr">"python.pythonPath"</span>: <span class="hljs-string">"C:\\Users\\user\\AppData\\Local\\Programs\\Python\\Python37-32\\python.exe"</span>,
+    <span class="hljs-attr">"python.linting.enabled"</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"python.linting.pylintEnabled"</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"files.trimTrailingWhitespace"</span>: <span class="hljs-literal">true</span>, // 儲存的時候，會幫你自動過濾多餘的空格
+    <span class="hljs-attr">"files.autoSave"</span>: <span class="hljs-string">"onFocusChange"</span>, // 是否自動儲存檔案
+    <span class="hljs-attr">"[python]"</span>:{  // 加入這幾行
+        <span class="hljs-attr">"editor.formatOnType"</span>: <span class="hljs-literal">true</span>,
+        <span class="hljs-attr">"editor.formatOnSave"</span>: <span class="hljs-literal">true</span>,
+        <span class="hljs-attr">"editor.renderIndentGuides"</span>: <span class="hljs-literal">true</span>,
+        <span class="hljs-attr">"editor.insertSpaces"</span>: <span class="hljs-literal">true</span>,
+        <span class="hljs-attr">"editor.detectIndentation"</span>: <span class="hljs-literal">true</span>,
+        <span class="hljs-attr">"editor.tabSize"</span>: <span class="hljs-number">4</span>
+    },
+}
+</code></pre>
+<p>裝好後就會發現每當你打完python的一行程式碼按Enter<br>
+以及存檔時<br>
+VS code就會幫我們的程式碼自動做排版</p>
+ <br>
+                                                    </div>
+                    </div>
+                </div>
+                
+                <div class="qa-action">
+    <ul class="list-inline qa-action__list">
+        <li>
+            <a href="https://ithelp.ithome.com.tw/articles/10212365#reply" class="qa-action__link qa-action__link--reply">
+                <i class="fa fa-comment fa-fw qa-action__icon"></i>留言<span class="qa-action__link-num">1</span>            </a>
+        </li>
+        <li>
+            <a href="https://ithelp.ithome.com.tw/users/login" class="qa-action__trace">
+		<i class="fa fa-heart-o fa-fw qa-action__icon"></i>追蹤
+	</a>
+        </li>
+        <li class="pull-right">
+            <a href="https://ithelp.ithome.com.tw/users/login" class="qa-action__link qa-action__link-report report_btn">
+				<i class="fa fa-flag fa-fw qa-action__icon"></i>檢舉
+		</a>
+        </li>
+            </ul>
+</div>
+
+
+                
+            </div>
+            
+            <div class="social-share clearfix">
+	<!-- <div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.6";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+	<div class="fb-like" data-href="https://ithelp.ithome.com.tw/articles/10212365" data-width="36px" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div> -->
+    <ul class="soc">
+	    <li><a class="soc-twitter" href="https://twitter.com/intent/tweet?text=https://ithelp.ithome.com.tw/articles/10212365" target="_blank"></a></li>
+	    <li><a class="soc-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://ithelp.ithome.com.tw/articles/10212365" target="_blank"></a></li>
+	    <li><a class="soc-google" href="https://plus.google.com/share?url=https://ithelp.ithome.com.tw/articles/10212365" target="_blank"></a></li>
+	    
+	</ul>
+</div>        </div>
+        
+
+        
+            
+        
+
+        
+                    <div class="qa-status">
+                <h3 class="qa-status__title">1 則留言</h3>
+                            </div>
+            
+            
+                            <div class="qa-panel response clearfix">
+    <a name="response-312704"></a>
+    <div class="qa-panel__side">
+                <div class="likeGroup">
+        <div class="likeGroup__arrow like_btn" data-type="response" data-id="312704">
+                <i class="fa fa-caret-up"></i>
+        </div>
+        <div class="likeGroup__num">0</div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+    <div class="qa-panel__content">
+        <div class="ans-header">
+                        <a href="https://ithelp.ithome.com.tw/users/20119210/profile" class="ans-header__avatar response__avatar-size">
+                <img src="./使用VS code建置環境並執行python程式 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/139963" class="img-circle ans-header__avatar-img">
+
+            </a>
+            <div class="response-header__info">
+                <a href="https://ithelp.ithome.com.tw/users/20119210/profile" class="response-header__person">to790303</a>
+                <div class="ans-header__leveltime">
+                    iT邦新手 5 級 ‧
+                    <a title="2019-11-04 17:53:26" class="ans-header__time">2019-11-04 17:53:26</a>
+                </div>
+            </div>
+                    </div>
+        
+                <div class="response-markdown">
+            <div class="markdown">
+                <div class="markdown__style">
+                                            <p>您好，請問下為何我在settings.json裡面的設置，如同你圖片中的設置一樣，但是他的訊息都會告知尾句有逗號，然後顯示有錯誤，是為什麼會這樣呢?</p>
+
+                                    </div>
+            </div>
+        </div>
+        <div class="qa-action response-action">
+            <ul class="list-inline qa-action__list">
+                                    <li class="qa-action__item">
+                        <div class="qa-action__comment">
+                            <i class="fa fa-comment fa-fw qa-action__icon"></i>回應
+                                                        </div>
+                    </li>
+                    <li class="qa-action__item pull-right">
+                        <a href="https://ithelp.ithome.com.tw/users/login" class="qa-action__link qa-action__link-report report_btn">
+				<i class="fa fa-flag fa-fw qa-action__icon"></i>檢舉
+		</a>
+                    </li>
+                            </ul>
+        </div>
+        
+        <div class="comment">
+                                                    <div class="comment__supplement"><a href="https://ithelp.ithome.com.tw/users/login">登入發表回應</a></div>
+            
+                                        
+        </div>
+        
+    </div>
+</div>
+                        
+                
+        <div id="reply">
+                            <div class="reply-status">
+                                            <h4 class="text-center">我要留言</h4>
+                                        <a href="https://ithelp.ithome.com.tw/users/login" class="btn btn-main">立即登入留言</a>
+                </div>
+                    </div>
+        
+
+        
+                <div class="related">
+            <h3 class="related__title">相關文章</h3>
+            <ul class="related__list-wrapper clearfix">
+                                    <li class="related__column">
+                        <ul class="list-unstyled">
+                                                            <li class="sidebox__item related__list">
+                                    <a href="https://ithelp.ithome.com.tw/articles/10212364?sc=pt" class="related__list-link">Django學習紀錄 0.導讀 1.Python第一章就Go</a>
+                                </li>
+                                                            <li class="sidebox__item related__list">
+                                    <a href="https://ithelp.ithome.com.tw/articles/10236909?sc=pt" class="related__list-link">[用舒服的姿勢開發 Python Project] Day 02 - Python 版本管理問題</a>
+                                </li>
+                                                            <li class="sidebox__item related__list">
+                                    <a href="https://ithelp.ithome.com.tw/articles/10237266?sc=pt" class="related__list-link">[用舒服的姿勢開發 Python Project] Day 03 - Pyenv 基本使用</a>
+                                </li>
+                                                            <li class="sidebox__item related__list">
+                                    <a href="https://ithelp.ithome.com.tw/articles/10237336?sc=pt" class="related__list-link">Day-7 想成為資料分析師？熟悉基礎串列 list 運用準沒錯！(下)</a>
+                                </li>
+                                                            <li class="sidebox__item related__list">
+                                    <a href="https://ithelp.ithome.com.tw/articles/10237887?sc=pt" class="related__list-link">Day-8 學會串列的進階操作，從生手到上手(上)</a>
+                                </li>
+                                                    </ul>
+                    </li>
+                                    <li class="related__column">
+                        <ul class="list-unstyled">
+                                                            <li class="sidebox__item related__list">
+                                    <a href="https://ithelp.ithome.com.tw/articles/10238287?sc=pt" class="related__list-link">[用舒服的姿勢開發 Python Project] Day 04 - Pyenv 的其他使用方法及原理</a>
+                                </li>
+                                                            <li class="sidebox__item related__list">
+                                    <a href="https://ithelp.ithome.com.tw/articles/10238641?sc=pt" class="related__list-link">Day-9 學會串列的進階操作，從生手到上手(下)</a>
+                                </li>
+                                                            <li class="sidebox__item related__list">
+                                    <a href="https://ithelp.ithome.com.tw/articles/10239042?sc=pt" class="related__list-link">Day-10 蘋果橘子不一樣！了解數值資料型態(上)</a>
+                                </li>
+                                                            <li class="sidebox__item related__list">
+                                    <a href="https://ithelp.ithome.com.tw/articles/10239468?sc=pt" class="related__list-link">Day-11 蘋果橘子不一樣！了解數值資料型態(下)</a>
+                                </li>
+                                                            <li class="sidebox__item related__list">
+                                    <a href="https://ithelp.ithome.com.tw/articles/10239489?sc=pt" class="related__list-link">Day-12 日式咖哩店的資訊對話，活用字典 dictionary 儲存資料(上)</a>
+                                </li>
+                                                    </ul>
+                    </li>
+                            </ul>
+        </div>
+                
+
+    </div>
+    <div class="rightside">
+        <div class="sidebox">
+	<a href="https://ithelp.ithome.com.tw/2021ironman/?utm_source=ithelp&amp;utm_medium=300banner&amp;utm_campaign=ironman13&amp;utm_content=trailer" target="_blank"><img src="./使用VS code建置環境並執行python程式 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/ir-300x100.gif" alt="iT邦幫忙鐵人賽"></a>
+</div>
+
+
+    
+
+
+
+
+
+
+
+
+<div class="sidebox">
+    <div class="sidebox__header">
+        熱門問題
+    </div>
+    <div class="sidebox__body">
+        <ul class="list-unstyled sidebox__list">
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10204137" class="sidebox__itemLink">
+                        誰可以借借我百度帳號嗎?   我只是要來載檔案而已。
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10204151" class="sidebox__itemLink">
+                        羅技滑鼠左鍵異常己過保可送修嗎？
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10204130" class="sidebox__itemLink">
+                        1A2B遊戲..
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10204128" class="sidebox__itemLink">
+                        誰有SCSA證照.....薪優
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10204119" class="sidebox__itemLink">
+                        PC加裝SSD後，連接WSUS更新問題
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10204199" class="sidebox__itemLink">
+                        有獨顯，但影幕輸出、錄影、看影片、寫程式永遠只能使用到內顯
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10204172" class="sidebox__itemLink">
+                        有關CDN流量計費問題
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10204144" class="sidebox__itemLink">
+                        setInterval定時刷新ajax 造成CPU負載過高
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10204139" class="sidebox__itemLink">
+                        請問如何不重灌server擴充硬碟
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10204180" class="sidebox__itemLink">
+                        ERP生產工單外的工時如何報工?
+                    </a>
+                </li>
+                    </ul>
+    </div>
+</div>
+
+<div class="sidebox">
+	<script src="./使用VS code建置環境並執行python程式 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/serve(4)"></script>
+	<div class="a19word">
+		<script type="text/javascript" src="./使用VS code建置環境並執行python程式 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/serve(5)"> </script>
+	</div>
+</div>
+
+<div class="sidebox">
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.5";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+
+	<div class="fb-page fb_iframe_widget" data-href="https://www.facebook.com/ithelpfans/" data-width="300" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="adapt_container_width=true&amp;app_id=&amp;container_width=300&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fithelpfans%2F&amp;locale=zh_TW&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;width=300"><span style="vertical-align: bottom; width: 300px; height: 0px;"><iframe name="f40ad557da0cc" width="300px" height="1000px" data-testid="fb:page Facebook Social Plugin" title="fb:page Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="./使用VS code建置環境並執行python程式 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/page.html" style="border: none; visibility: visible; width: 300px; height: 0px;" class=""></iframe></span></div>
+</div>
+
+
+
+<div class="sidebox">
+    <div class="sidebox__header clearfix">
+        熱門tag
+        <a href="https://ithelp.ithome.com.tw/tags" class="sidebox__moreLink">看更多<i class="fa fa-caret-right fa-fw"></i></a>
+    </div>
+    <div class="sidebox__body">
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/12th%E9%90%B5%E4%BA%BA%E8%B3%BD" class="tag sidebox__tagList">
+                12th鐵人賽
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/11th%E9%90%B5%E4%BA%BA%E8%B3%BD" class="tag sidebox__tagList">
+                11th鐵人賽
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/%E9%90%B5%E4%BA%BA%E8%B3%BD" class="tag sidebox__tagList">
+                鐵人賽
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/2019%E9%90%B5%E4%BA%BA%E8%B3%BD" class="tag sidebox__tagList">
+                2019鐵人賽
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/2018%E9%90%B5%E4%BA%BA%E8%B3%BD" class="tag sidebox__tagList">
+                2018鐵人賽
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/javascript" class="tag sidebox__tagList">
+                javascript
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/2017%E9%90%B5%E4%BA%BA%E8%B3%BD" class="tag sidebox__tagList">
+                2017鐵人賽
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/windows" class="tag sidebox__tagList">
+                windows
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/php" class="tag sidebox__tagList">
+                php
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/windows%20server" class="tag sidebox__tagList">
+                windows server
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/linux" class="tag sidebox__tagList">
+                linux
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/python" class="tag sidebox__tagList">
+                python
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88" class="tag sidebox__tagList">
+                程式設計
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/c%23" class="tag sidebox__tagList">
+                c#
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8" class="tag sidebox__tagList">
+                資訊安全
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/css" class="tag sidebox__tagList">
+                css
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/sql" class="tag sidebox__tagList">
+                sql
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/%E5%88%86%E4%BA%AB" class="tag sidebox__tagList">
+                分享
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/mysql" class="tag sidebox__tagList">
+                mysql
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/%E5%B0%88%E6%A1%88%E7%AE%A1%E7%90%86" class="tag sidebox__tagList">
+                專案管理
+            </a>
+            </div>
+</div>
+
+
+
+
+
+
+
+<div class="sidebox">
+    <div class="sidebox__header">
+        熱門回答
+    </div>
+    <div class="sidebox__body">
+        <ul class="list-unstyled sidebox__list">
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10204237" class="sidebox__itemLink">
+                        初入資訊人，該如何選書
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10204137" class="sidebox__itemLink">
+                        誰可以借借我百度帳號嗎?   我只是要來載檔案而已。
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10204144" class="sidebox__itemLink">
+                        setInterval定時刷新ajax 造成CPU負載過高
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10204180" class="sidebox__itemLink">
+                        ERP生產工單外的工時如何報工?
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10204202" class="sidebox__itemLink">
+                        C++問題求解
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10204204" class="sidebox__itemLink">
+                        關於VPN的問題
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10204208" class="sidebox__itemLink">
+                        想請教關於 選擇合適的網站託管方式
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10204130" class="sidebox__itemLink">
+                        1A2B遊戲..
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10204139" class="sidebox__itemLink">
+                        請問如何不重灌server擴充硬碟
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10204151" class="sidebox__itemLink">
+                        羅技滑鼠左鍵異常己過保可送修嗎？
+                    </a>
+                </li>
+                    </ul>
+    </div>
+</div>
+
+<div class="sidebox">
+	<script src="./使用VS code建置環境並執行python程式 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/serve(6)"></script>
+</div>
+
+
+<div class="sidebox">
+    <div class="sidebox__header">
+        熱門文章
+    </div>
+    <div class="sidebox__body">
+        <ul class="list-unstyled sidebox__list">
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/articles/10257199" class="sidebox__itemLink">
+                        容器化的安全原則(the security principles of containerization)
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/articles/10257221" class="sidebox__itemLink">
+                        在瀏覽器直接執行CMD指令
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/articles/10257219" class="sidebox__itemLink">
+                        [如何關掉TP-Link WR841N的Beacon]
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/articles/10257194" class="sidebox__itemLink">
+                        零信任（Zero Trust）
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/articles/10255551" class="sidebox__itemLink">
+                        [python] TFT Display測試心得碎念(拿st7735的經驗拯救ili9341)
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/articles/10257217" class="sidebox__itemLink">
+                        RISC-V on Rust 從零開始(1) - 安裝 Rust 環境
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/articles/10257193" class="sidebox__itemLink">
+                        Microsoft Azure Pass 學習日誌 Day 1
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/articles/10254215" class="sidebox__itemLink">
+                        GCP  自動開關機
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/articles/10257215" class="sidebox__itemLink">
+                        戰略思考與規劃（Strategic Thinking and Planning）
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/articles/10257101" class="sidebox__itemLink">
+                        進擊的軟體工程師之路-軟體戰鬥營 第十八週
+                    </a>
+                </li>
+                    </ul>
+    </div>
+</div>
+
+<div class="sidebox">
+    <div class="sidebox__header clearfix">
+        一週點數排行
+        <a href="https://ithelp.ithome.com.tw/point_rank/total" class="sidebox__moreLink">更多點數排行<i class="fa fa-caret-right fa-fw"></i></a>
+    </div>
+    <div class="sidebox__body">
+        <ol class="list-unstyled sidebox__rank">
+
+                            <li class="sidebox__rankItem  sidebox__rankItem--bgyellow  ">
+                    <a href="https://ithelp.ithome.com.tw/users/20001787/profile" class="sidebox__rankItemLink">海綿寶寶 (antijava)</a>
+                </li>
+                            <li class="sidebox__rankItem  sidebox__rankItem--bgyellow  ">
+                    <a href="https://ithelp.ithome.com.tw/users/20117954/profile" class="sidebox__rankItemLink">japhenchen (japhenchen)</a>
+                </li>
+                            <li class="sidebox__rankItem  sidebox__rankItem--bgyellow  ">
+                    <a href="https://ithelp.ithome.com.tw/users/20105694/profile" class="sidebox__rankItemLink">小魚 (henrychang)</a>
+                </li>
+                            <li class="sidebox__rankItem  ">
+                    <a href="https://ithelp.ithome.com.tw/users/20101641/profile" class="sidebox__rankItemLink">㊣浩瀚星空㊣ (yoching)</a>
+                </li>
+                            <li class="sidebox__rankItem  ">
+                    <a href="https://ithelp.ithome.com.tw/users/20001805/profile" class="sidebox__rankItemLink">國際 IT 人 (kiwiaa)</a>
+                </li>
+                            <li class="sidebox__rankItem  ">
+                    <a href="https://ithelp.ithome.com.tw/users/20085021/profile" class="sidebox__rankItemLink">rogeryao (rogeryao)</a>
+                </li>
+                            <li class="sidebox__rankItem  ">
+                    <a href="https://ithelp.ithome.com.tw/users/20026603/profile" class="sidebox__rankItemLink">raytracy (raytracy)</a>
+                </li>
+                            <li class="sidebox__rankItem  ">
+                    <a href="https://ithelp.ithome.com.tw/users/20083857/profile" class="sidebox__rankItemLink">mytiny (mytiny)</a>
+                </li>
+                            <li class="sidebox__rankItem  ">
+                    <a href="https://ithelp.ithome.com.tw/users/20102031/profile" class="sidebox__rankItemLink">bluegrass (bluegrass)</a>
+                </li>
+                            <li class="sidebox__rankItem  ">
+                    <a href="https://ithelp.ithome.com.tw/users/20110850/profile" class="sidebox__rankItemLink">Peter學程式 (ianchen0119)</a>
+                </li>
+                    </ol>
+    </div>
+</div>    </div>
+	        </div>
+	    </div>
+	</div>
+
+        <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="a970">
+                    <script src="./使用VS code建置環境並執行python程式 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/serve(3)"></script>
+                </div>
+                <ul class="list-inline footer__menu">
+                    <li class="footer__item">電週文化事業版權所有、轉載必究 | Copyright © <a href="https://www.ithome.com.tw/" target="_blank" class="footer__link">iThome</a></li>
+                    <li><a href="https://www.ithome.com.tw/aboutus/" target="_blank" class="footer__link">刊登廣告</a></li>
+                    <li><a href="https://www.ithome.com.tw/aboutus/" target="_blank" class="footer__link">授權服務</a></li>
+                    <li><a href="mailto:ithelp@mail.ithome.com.tw" class="footer__link">服務信箱</a></li>
+                    <li><a href="https://www.ithome.com.tw/terms" target="_blank" class="footer__link">隱私權聲明與會員使用條款</a></li>
+                    <li><a href="https://ithelp.ithome.com.tw/guide" class="footer__link">iT邦幫忙使用說明</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>        <script src="./使用VS code建置環境並執行python程式 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/jquery.min.js.下載"></script>
+<script src="./使用VS code建置環境並執行python程式 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/jquery-ui.min.js.下載"></script>
+<script src="./使用VS code建置環境並執行python程式 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/bootstrap.min.js.下載"></script>
+<script src="./使用VS code建置環境並執行python程式 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/messenger.min.js.下載"></script>
+<script>
+    Messenger.options = {
+        extraClasses: 'messenger-fixed messenger-on-bottom messenger-on-left',
+        theme: 'block'
+    };
+
+    function getCookie(name) {
+        var arr, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
+
+        if (arr = document.cookie.match(reg))
+            return unescape(arr[2]);
+        else
+            return null;
+    }
+    
+    window.Notification.TOKEN = getCookie("_token");
+</script>
+<script>
+    $(function(){
+        $.ajaxPrefilter(function(options, originalOptions, jqXHR){
+            if (options.type.toLowerCase() !== "get" && !options.beforeSend) {
+                options.beforeSend = function(xhr) {
+                        xhr.setRequestHeader('X-CSRF-TOKEN', '6qNKeWFiVVfDItBwSiVqOT3CRA9xGiTnRsndTaas');
+                    }
+            }
+        });
+    });
+</script>
+<script src="./使用VS code建置環境並執行python程式 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/vue.min.js.下載"></script>
+<script src="./使用VS code建置環境並執行python程式 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/sweetalert.min.js.下載"></script>
+<script src="./使用VS code建置環境並執行python程式 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/event.js.下載"></script>
+<script src="./使用VS code建置環境並執行python程式 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/select2.full.min.js.下載"></script>
+
+<script src="./使用VS code建置環境並執行python程式 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/ImgPreview.js.下載"></script>
+<!-- highlight -->
+<script src="./使用VS code建置環境並執行python程式 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/highlight.pack.js.下載"></script>
+<script>
+    $(function(){
+        $('pre code').each(function(i, block) {
+            $(block).attr('class');
+            hljs.highlightBlock(block);
+        });
+    })
+</script>
+<!--messenger, get cookie, token-->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-3355931-1']);
+  _gaq.push(['_trackPageview']);
+ (function() {
+   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+ })();
+</script>
+
+
+
+    <div class="modal fade" id="AtUser" tabindex="-1">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title text-center">At</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="invite_person" class="control-label">輸入對方的帳號或暱稱</label>
+                        <input type="text" class="form-control modal-input" id="invite_person" v-model="result_text" debounce="500">
+                        <div id="editor_tagged_ids"></div>
+                    </div>
+                    <ul class="list-unstyled invitation">
+                        <li style="text-align: center">
+                            <template v-if="!!result_text &amp;&amp; !result_list.length &amp;&amp; is_loading"></template>
+                            <template v-if="!!result_text &amp;&amp; !result_list.length &amp;&amp; !is_loading"></template>
+                        </li>
+                        <li class="invitation-list" v-for="result in result_list">
+                            <img v-if="result &amp;&amp; result.center_id" :src="&#39;https://member.ithome.com.tw/avatars/&#39; + result.center_id + &#39;?s=ithelp&#39;" style="float: left; margin-left: 10px; width: 48px; height: 48px;">
+                            <div class="invitation-list__content clearfix">
+                                <a class="btn btn-main invitation-list__btn" @click="AtUserByID(result.label, result.id)">標記</a>
+                                <div><a href="https://ithelp.ithome.com.tw/articles/10212365#" class="invitation-list__name">{{ result.label }}</a></div>
+                                <div><a href="https://ithelp.ithome.com.tw/articles/10212365#" class="invitation-list__account">{{ result.account }}</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <a type="button" class="btn btn-main" data-dismiss="modal">關閉</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+</body></html>

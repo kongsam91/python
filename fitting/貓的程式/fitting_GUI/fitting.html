@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitting Program for 778</title>
+    <!-- <script type="text/javascript" src="/eel.js"></script> -->
+    <script type="text/javascript">    
+        var path = (window.URL || window.webkitURL).createObjectURL(file);
+        console.log('path', path);
+    </script>
+</head>
+    <body>
+        <select id="kind_of_spectral_line" onchange="">
+            <option value="none">請選擇你要Fitting的譜線</option>
+            <option value="85">85</option>
+            <option value="87">87</option>
+        </select>
+        <br>
+        <!-- 選擇檔案 -->
+        <input type="file" id="fileUpload">
+        <br>
+        <button id="button_login" onclick="btn_click()">
+            執行
+        </button>
+        <!--以下為output結果  -->
+        <hr> 
+        <img src="./plot.png" width="800" height="600" alt = "123"></img>
+    </body>
+    <script type="text/javascript" src="./fitting.js"></script> 
+</html>

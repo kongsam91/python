@@ -1,0 +1,3 @@
+$ pip install pipenv  # 安裝 Pipenv
+$ pipenv install      # 在專案目錄中啟用並安裝套件，若有 dev 套件則加上 --dev
+$ pipenv shell        # 啟動專案的 virtualenv 虛擬環境
